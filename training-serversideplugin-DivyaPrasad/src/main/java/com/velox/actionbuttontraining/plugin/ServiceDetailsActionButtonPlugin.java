@@ -84,6 +84,7 @@ public class ServiceDetailsActionButtonPlugin extends ExemplarVeloxServerPlugin<
 				transMan.storeChanges();
 				dataRecordManager.storeAndCommit("Updated Service Details", clientCallback.getClientCallbackRMI(), user);
 				
+				//added a new line here!!
 			}
 		}
 
