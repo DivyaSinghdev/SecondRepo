@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.velox.training</groupId>
+    <artifactId>training-parent-DivyaPrasad</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>training-serversideplugin-DivyaPrasad</module>
+   
+    </modules>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.sapiosciences.maven.poms</groupId>
+        <artifactId>sapiomaster</artifactId>
+        <version>6.3.0-Sapio</version>
+    </parent>
+
+    <properties>
+        <!-- What Sapio Foundations version are we referring to? -->
+        <sapiofoundations.version>30.0.3.23.9</sapiofoundations.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.velox.internalproducts</groupId>
+                <artifactId>sapio-commons</artifactId>
+                <version>${sapiofoundations.version}</version>
+                <type>applib</type>
+            </dependency>
+            <dependency>
+                <groupId>com.velox.internalproducts</groupId>
+                <artifactId>sapioutils</artifactId>
+                <version>${sapiofoundations.version}</version>
+                <type>applib</type>
+            </dependency>
+            <dependency>
+                <groupId>com.velox.internalproducts</groupId>
+                <artifactId>sapioelnutils</artifactId>
+                <version>${sapiofoundations.version}</version>
+                <type>applib</type>
+            </dependency>
+            <dependency>
+                <groupId>com.velox.internalproducts</groupId>
+                <artifactId>sapioclientpluginutils</artifactId>
+                <version>${sapiofoundations.version}</version>
+                <type>applib</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.velox.internalproducts</groupId>
+                        <artifactId>veloxclientbasedata</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.velox.internalproducts</groupId>
+                <artifactId>sapiofoundations</artifactId>
+                <version>${sapiofoundations.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

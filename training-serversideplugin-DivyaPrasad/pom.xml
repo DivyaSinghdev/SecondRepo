@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>training-serversideplugin-DivyaPrasad</artifactId>
+
+    <!-- Specifies the Server-Side Super Dependencies. All server-side plugins/libs/applibs
+		must be built against one of them to preserve integrity of applib -->
+    <parent>
+        <groupId>com.velox.training</groupId>
+        <artifactId>training-parent-DivyaPrasad</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- Available Packaging (Select One):
+	plugin: server-side plugin 
+	applib: server-side applib 
+	jar: server side libraries that should go to lib/ instead of applib/ -->
+    <packaging>jar</packaging>
+
+    <name>training server side plugin</name>
+    <url>URL of your better description if you have one. This tag can be removed.</url>
+    <description>Even more description about what this thing does.</description>
+
+    <properties>
+        <!-- Java Compiler Versions -->
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
+        <!-- Forces a build source code encoding to handle international characters. -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Reflects archetype properties to dependencies via this middle-man
+			for dependency versions. -->
+        <junitversion>4.12</junitversion>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junitversion}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.velox.internalproducts</groupId>
+            <artifactId>accessionservice</artifactId>
+            <version>${sapiofoundations.version}</version>
+            <type>plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>com.velox.internalproducts</groupId>
+            <artifactId>complexdataloader</artifactId>
+            <version>${sapiofoundations.version}</version>
+            <type>plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>com.velox.internalproducts</groupId>
+            <artifactId>storagemanagement</artifactId>
+            <version>${sapiofoundations.version}</version>
+            <type>plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>com.velox.internalproducts</groupId>
+            <artifactId>sapiogeneric</artifactId>
+            <version>${sapiofoundations.version}</version>
+            <type>plugin</type>
+        </dependency>
+
+        <!-- Add your dependencies here. Examples from accessionservicesharedlib:
+            If a dependency you have is an "applib", you must specify "type" as applib.
+            If a dependency you have is a "plugin", you must specify "type" as "plugin".
+            NOTE: we cannot transitively resolve anything published by the old ant build
+            script. A jar type do not need to have its type specified as it's implicit. -->
+    </dependencies>
+
+    <!-- Let's not worry about SCM for now... -->
+
+</project>

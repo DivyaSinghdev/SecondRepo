@@ -1,0 +1,7 @@
+com\velox\training\TrainingELNGenericPlugin.class
+com\velox\training\managers\TrainingExperimentManager$1.class
+com\velox\training\constants\TrainingConstants.class
+com\velox\training\managers\TrainingExperimentManager.class
+com\velox\training\managers\TrainingManager.class
+com\velox\training\TrainingGenericPlugin.class
+com\velox\training\TrainingManagerBase.class

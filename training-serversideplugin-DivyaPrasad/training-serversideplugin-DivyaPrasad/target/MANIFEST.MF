@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.9.7
+Build-Jdk: 17.0.13
+Class-Path: ../plugins/accessionservice.jar ../plugins/complexdataloader
+ .jar ../plugins/storagemanagement.jar ../plugins/sapioclientplugingener
+ ic.jar ../plugins/sapiogeneric.jar ../lib/accessionserviceapplib.jar ..
+ /lib/sapio-commons.jar ../lib/sapioanalytics-native-lib.jar ../lib/sapi
+ o-sexp-protocols.jar ../lib/sapio-saas-nativeexec-client.jar ../lib/sap
+ io-saas-nativeexec-commons.jar ../lib/sapioelnutils.jar ../lib/sapiouti
+ ls.jar ../lib/sapioclientpluginutils.jar
+Implementation-Title: training server side plugin
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.velox.training
+Implementation-URL: URL of your better description if you have one. This
+  tag can be removed.
+Implementation-Vendor: If you are Sapio employee, use artifactorysapioem
+ ployee profile. Otherwise, replace vendor.name Property when building w
+ ith Maven.
+Build-Date: 2025-01-17 02:54:44
+Built-By: Swathi01.R
+Implementation-Build: ?
+Build-Version: 1.0-SNAPSHOT/Developer Swathi01.R IDE?/b?
+

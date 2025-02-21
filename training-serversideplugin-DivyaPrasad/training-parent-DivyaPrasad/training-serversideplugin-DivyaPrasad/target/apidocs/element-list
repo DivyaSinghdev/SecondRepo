@@ -1,0 +1,13 @@
+com.velox.actionbuttontraining.plugin
+com.velox.constantsforplugin
+com.velox.custommethodsforplugin
+com.velox.experimentvalidation.plugin
+com.velox.processmanagerplugin
+com.velox.SampleExperimentation.plugin
+com.velox.samplevalidationplugin
+com.velox.selectionListTraining.plugin
+com.velox.servicedetailtraining.plugin
+com.velox.training
+com.velox.training.constants
+com.velox.training.managers
+com.velox.training.plugin
